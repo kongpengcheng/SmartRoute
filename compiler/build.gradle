@@ -1,5 +1,14 @@
 apply plugin: 'java'
-
+apply plugin: 'com.novoda.bintray-release'
+publish{
+    userOrg ='harrypengcheng'
+    repoName = 'smart_router'
+    groupId = 'com.harry.smartroute'
+    artifactId = 'smartrouter'
+    publishVersion = '1.1.0'
+    desc = 'smart router'
+    website = 'https://github.com/kongpengcheng/SmartRoute'
+}
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }

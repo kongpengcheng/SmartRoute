@@ -1,15 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
-publish{
-    userOrg ='harrypengcheng'
-    repoName = 'smart_retrofit'
-    groupId = 'com.harry.smartcache'
-    artifactId = 'smartretrofit'
-    publishVersion = '1.1.0'
-    desc = 'smart retrofit'
-    website = 'https://github.com/kongpengcheng/SmartRetrofit'
-}
 android {
     compileSdkVersion 26
 
