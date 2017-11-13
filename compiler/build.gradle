@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+Properties version = new Properties()
+version.load(project.file('../VERSION.properties').newDataInputStream())
+def annoVersion = version.getProperty("ANNOTATION_VERSION")
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.squareup:javapoet:1.9.0'
+    compile project(':annotation')
+//    compile "com.chenenyu.router:annotation:${annoVersion}"
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7

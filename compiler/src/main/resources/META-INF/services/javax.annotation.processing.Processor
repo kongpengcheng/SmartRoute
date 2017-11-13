@@ -1,0 +1,3 @@
+com.smart.router.compiler.processor.RouteProcessor
+com.smart.router.compiler.processor.InterceptorProcessor
+com.smart.router.compiler.processor.InjectParamProcessor
