@@ -7,7 +7,8 @@
         }
  《2》`其次需要在你需要的模块中添加两行依赖`
   compile 'com.kong.router:router:1.1.3'
-    implementation project(':routermoudle')
+   annotationProcessor 'com.kong.router:compiler:1.1.2'
+
     
 ----------
 **路由实现的意义**
