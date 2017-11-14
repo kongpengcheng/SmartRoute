@@ -90,3 +90,12 @@ public class SchemeFilterActivity extends Activity {
     }
 }
 
+
+
+
+上传命令:
+需要先在local.properties文件中配置如下信息：
+bintray.user=***
+bintray.apikey=***
+配置完后在你那个SmartRouter工程目录下执行命令：gradlew bintrayUpload就OK了
+
