@@ -1,14 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'com.novoda.bintray-release'
-publish{
-    userOrg ='harrypengcheng'
-    repoName = 'smart_router'
-    groupId = 'com.harry.smartroute'
-    artifactId = 'smartrouter'
-    publishVersion = '1.1.0'
-    desc = 'smart router'
-    website = 'https://github.com/kongpengcheng/SmartRoute'
-}
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
@@ -20,9 +10,11 @@ def annoVersion = version.getProperty("ANNOTATION_VERSION")
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.squareup:javapoet:1.9.0'
-    compile project(':annotation')
-//    compile "com.chenenyu.router:annotation:${annoVersion}"
+//    compile project(':annotation')
+    compile 'com.kong.router:annotation:0.3.0'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
+
+//apply from: 'publish.gradle'

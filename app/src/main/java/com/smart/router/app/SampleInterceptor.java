@@ -11,7 +11,6 @@ import com.smart.router.router.RouteRequest;
 /**
  * 自定义拦截器，通过注解指定name，就可以在Route中引用
  * <p>
- * Created by Cheney on 2017/3/6.
  */
 @Interceptor("SampleInterceptor")
 public class SampleInterceptor implements RouteInterceptor {

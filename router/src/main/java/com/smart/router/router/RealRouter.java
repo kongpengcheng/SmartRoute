@@ -30,7 +30,7 @@ import java.util.Set;
  */
 class RealRouter extends AbsRouter {
     private static RealRouter sInstance;
-    private static final String PARAM_CLASS_SUFFIX = "$$Router$$ParamInjector";
+    private static final String PARAM_CLASS_SUFFIX = "$$SmartRouter$$ParamInjector";
 
     private Map<String, RouteInterceptor> mInterceptorInstance = new HashMap<>();
 
@@ -126,7 +126,7 @@ class RealRouter extends AbsRouter {
         }
 
         if (!mRouteRequest.isSkipInterceptors()) {
-            for (RouteInterceptor interceptor : Router.getGlobalInterceptors()) {
+            for (RouteInterceptor interceptor : SmartRouter.getGlobalInterceptors()) {
                 if (interceptor.intercept(context, mRouteRequest)) {
                     callback(RouteResult.INTERCEPTED, "Intercepted by global interceptor.");
                     return null;
@@ -196,7 +196,7 @@ class RealRouter extends AbsRouter {
         }
 
         if (!mRouteRequest.isSkipInterceptors()) {
-            for (RouteInterceptor interceptor : Router.getGlobalInterceptors()) {
+            for (RouteInterceptor interceptor : SmartRouter.getGlobalInterceptors()) {
                 if (interceptor.intercept(context, mRouteRequest)) {
                     callback(RouteResult.INTERCEPTED, "Intercepted by global interceptor.");
                     return null;

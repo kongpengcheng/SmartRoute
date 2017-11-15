@@ -33,6 +33,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':router')
     annotationProcessor project(':compiler')
+//    compile 'com.kong.router:annotation:0.3.0'
+//    annotationProcessor 'com.kong.router:compiler:1.1.1'
+//    compile 'com.kong.router:router:1.1.1'
+
+
+
 //
 //    annotationProcessor  project(':compiler')
 //    compile project(':router')
@@ -42,5 +48,6 @@ dependencies {
 }
 
 repositories {
+    jcenter()
     google()
 }

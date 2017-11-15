@@ -5,7 +5,8 @@ import android.os.Bundle;
 
 import com.smart.router.annotation.InjectParam;
 import com.smart.router.annotation.Route;
-import com.smart.router.router.Router;
+import com.smart.router.router.SmartRouter;
+
 @Route("test")
 public class TestActivity extends AppCompatActivity {
     @InjectParam
@@ -16,6 +17,6 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        Router.injectParams(this);
+        SmartRouter.injectParams(this);
     }
 }

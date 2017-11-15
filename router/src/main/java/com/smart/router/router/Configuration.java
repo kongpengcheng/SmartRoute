@@ -28,7 +28,7 @@ public class Configuration {
 
         public Configuration build() {
             if (modules == null || modules.length == 0) {
-                throw new RuntimeException("You must call registerModules() to initialize Router.");
+                throw new RuntimeException("You must call registerModules() to initialize SmartRouter.");
             }
             Configuration configuration = new Configuration();
             configuration.debuggable = this.debuggable;

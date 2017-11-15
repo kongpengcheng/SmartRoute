@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.smart.router.router.Router;
+import com.smart.router.router.SmartRouter;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == btn_test) {
-            Router.build("test").go(this);
+            SmartRouter.build("test").go(this);
         }
     }
 }

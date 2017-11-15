@@ -7,7 +7,7 @@ import android.util.Log;
  * <p>
  */
 public class RLog {
-    private static final String TAG = "Router";
+    private static final String TAG = "SmartRouter";
     private static boolean sLoggable = false;
 
     public static void showLog(boolean loggable) {

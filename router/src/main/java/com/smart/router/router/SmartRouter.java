@@ -14,9 +14,9 @@ import java.util.List;
  * <p>
  * Created by Harry.Kong.
  */
-public class Router {
+public class SmartRouter {
     /**
-     * You can get the raw uri in target page by call <code>intent.getStringExtra(Router.RAW_URI)</code>.
+     * You can get the raw uri in target page by call <code>intent.getStringExtra(SmartRouter.RAW_URI)</code>.
      */
     public static final String RAW_URI = "raw_uri";
 
