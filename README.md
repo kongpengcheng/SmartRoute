@@ -80,7 +80,7 @@ SmartRouter.build("test").go(this);
 
    **拦截调用**  
 ```
-             SmartRouter.build("intercepted").addInterceptors("SampleInterceptor").go(this);
+SmartRouter.build("intercepted").addInterceptors("SampleInterceptor").go(this);
 
 ```
    **拦截取消**  
