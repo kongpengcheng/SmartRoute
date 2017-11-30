@@ -77,12 +77,12 @@ SmartRouter.build("test").go(this);
 
 
 5.拦截功能(ps:假如界面需要检测是否登录，如果没登录先跳转到登录界面，首先创建拦截器，其次需要拦截检测的类注解)
- **拦截调用**  
+   **拦截调用**  
 ```
              SmartRouter.build("intercepted").addInterceptors("SampleInterceptor").go(this);
 
 ```
- **拦截取消**  
+   **拦截取消**  
 ```        
 SmartRouter.build("intercepted").skipInterceptors("SampleInterceptor").go(this);
 ```
